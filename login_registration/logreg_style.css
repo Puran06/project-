@@ -1,0 +1,112 @@
+/* CSS styling for the forms */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #000;
+}
+
+.form-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+    margin: 0 0 20px;
+    text-align: center;
+    color: #000;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #000;
+}
+
+.input-container input,
+.input-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container input[type="submit"] {
+    width: 150px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-container input[type="submit"]:hover {
+    background-color: #c00;
+}
+
+.toggle-form-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #000;
+}
+
+.toggle-form-link a {
+    color: #c00;
+    text-decoration: none;
+}
+
+.toggle-form-link a:hover {
+    text-decoration: underline;
+}
+
+/* CSS styling for the navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-home {
+    margin-right: 10px;
+}
+
+.navbar-home a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #c00;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-home a:hover {
+    background-color: #900;
+}

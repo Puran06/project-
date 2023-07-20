@@ -1,0 +1,13 @@
+CREATE TABLE Users (
+    user_id INT PRIMARY KEY AUTO_INCREMENT,
+    full_name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    contact_number VARCHAR(20) NOT NULL,
+    location ENUM('Location 1', 'Location 2', 'Location 3', 'Location 4') NOT NULL,
+    vehicle_type ENUM('Bus', 'Bike', 'Car', 'Truck') NOT NULL,
+    entry_time DATETIME NOT NULL,
+    exit_time DATETIME NOT NULL,
+    total_money DECIMAL(10, 2) NOT NULL,
+    role ENUM('admin', 'user') NOT NULL
+);
