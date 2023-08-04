@@ -1,178 +1,166 @@
-/* users_dashboard.css */
-
-/* Body styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+/* Global styles */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   
-  /* Page container styles */
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #D1F2EB;
+  }
+  
+  /* Navigation styles */
+  nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
   }
   
-  /* Heading styles */
-  h1 {
-    color: #333;
-    text-align: center;
+  .navbar-menu {
+    display: flex;
+    list-style: none;
   }
   
-  h2 {
-    color: #333;
+  .navbar-menu li {
+    margin-right: 20px;
+  }
+  
+  .navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-menu li a:hover {
+    color: #4AC8C8;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
   
   /* Profile section styles */
   .profile-section {
     background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .profile-section h2 {
+    margin-bottom: 10px;
   }
   
   .profile-section p {
-    margin: 10px 0;
+    font-size: 18px;
+    margin-bottom: 5px;
   }
   
-  .profile-section strong {
+  .profile-section p strong {
     font-weight: bold;
-  }
-  
-  #full-name,
-  #email,
-  #contact-number,
-  #location,
-  #vehicle-type,
-  #entry-time,
-  #exit-time,
-  #total-money {
-    color: #333;
   }
   
   /* Account section styles */
   .account-section {
     background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .account-section h2 {
+    margin-bottom: 10px;
   }
   
   .account-section p {
-    margin: 10px 0;
+    font-size: 18px;
+    margin-bottom: 5px;
   }
   
-  .account-section strong {
+  .account-section p strong {
     font-weight: bold;
-  }
-  
-  #user-id,
-  #role {
-    color: #333;
   }
   
   /* Activity section styles */
   .activity-section {
     background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .activity-section h2 {
+    margin-bottom: 10px;
   }
   
   .activity-section p {
-    margin: 10px 0;
+    font-size: 18px;
+    margin-bottom: 5px;
   }
   
-  .activity-section strong {
+  .activity-section p strong {
     font-weight: bold;
   }
   
   /* Actions section styles */
   .actions-section {
     background-color: #fff;
-    padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
   }
   
   .actions-section h2 {
-    margin-top: 0;
+    margin-bottom: 10px;
   }
   
   .actions-section button {
-    background-color: #ff4b5c;
-    color: #fff;
+    background-color: #333;
     border: none;
-    padding: 10px 20px;
-    margin-right: 10px;
     border-radius: 5px;
+    color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
   }
   
   .actions-section button:hover {
-    background-color: #ff3350;
+    background-color: #fff;
+    border: 2px solid #333;
+    color: #333;
   }
-
-  /* users_dashboard.css */
-
-nav {
-    background-color: #333;
-    padding: 10px 0;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .logo {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-  }
-  
-  .navbar-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar-menu li {
-    display: inline-block;
-  }
-  
-  .navbar-menu li a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 10px;
-  }
-  
-  .navbar-menu li:first-child a {
-    margin-left: 0;
-  }
-  
   
   /* Responsive styles */
-  @media screen and (max-width: 600px) {
-    .container {
-      padding: 10px;
+  @media screen and (max-width: 768px) {
+    .navbar-menu {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
     }
   
     .actions-section button {
-      display: block;
       margin-bottom: 10px;
-      margin-right: 0;
     }
   }
-  

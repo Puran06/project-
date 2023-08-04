@@ -72,6 +72,8 @@ mysqli_close($connection);
             <a class="logo" href="#">Logo</a>
             <ul class="navbar-menu">
                 <li><a href="../index.html">Home</a></li>
+                <!-- Add Booking Link -->
+                <li><a href="booking.php">Booking</a></li>
             </ul>
         </div>
     </nav>
@@ -105,11 +107,9 @@ mysqli_close($connection);
         <h2>Actions</h2>
         <button onclick="updateProfile()">Update Profile</button>
         <button onclick="changePassword()">Change Password</button>
-       
-        <button > <a href="login_registration.php">logout</a></button>
+
+        <button><a href="login_registration.php">logout</a></button>
     </div>
-
-
 
     <script src="users_dashboard.js"></script>
 </body>
