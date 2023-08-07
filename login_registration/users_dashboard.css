@@ -1,166 +1,154 @@
-/* Global styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* users_dashboard.css */
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Heading Styling */
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Navigation Styling */
+nav {
+  background-color: #222222;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Profile and Account Sections Styling */
+.profile-section,
+.account-section,
+.activity-section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section h2,
+.account-section h2,
+.activity-section h2 {
+  color: #333;
+  margin-top: 0;
+}
+
+.profile-section p,
+.account-section p,
+.activity-section p {
+  margin: 0;
+}
+
+.profile-section strong,
+.account-section strong,
+.activity-section strong {
+  font-weight: bold;
+}
+
+.profile-section span,
+.account-section span,
+.activity-section span {
+  color: #ff4444;
+}
+
+/* Actions Section Styling */
+.actions-section {
+  background-color: #222222;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.actions-section h2 {
+  color: #fff;
+  margin-top: 0;
+}
+
+.actions-section .action-box {
+  padding: 10px;
+  background-color: #555555;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.actions-section .logout-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff4444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.actions-section .logout-button:hover {
+  background-color: #ff8888;
+}
+
+.actions-section a {
+  color: #3a2929;
+  text-decoration: none;
+}
+
+.actions-section .action-link {
+  display: block;
+  padding: 10px 20px;
+  color: #030303;
+  text-decoration: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #D1F2EB;
-  }
-  
-  /* Navigation styles */
-  nav {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  
+
   .navbar-menu {
-    display: flex;
-    list-style: none;
+    margin-top: 10px;
   }
-  
-  .navbar-menu li {
-    margin-right: 20px;
-  }
-  
-  .navbar-menu li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .navbar-menu li a:hover {
-    color: #4AC8C8;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
-  /* Profile section styles */
-  .profile-section {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    padding: 20px;
-  }
-  
-  .profile-section h2 {
-    margin-bottom: 10px;
-  }
-  
-  .profile-section p {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  .profile-section p strong {
-    font-weight: bold;
-  }
-  
-  /* Account section styles */
-  .account-section {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    padding: 20px;
-  }
-  
-  .account-section h2 {
-    margin-bottom: 10px;
-  }
-  
-  .account-section p {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  .account-section p strong {
-    font-weight: bold;
-  }
-  
-  /* Activity section styles */
-  .activity-section {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    padding: 20px;
-  }
-  
-  .activity-section h2 {
-    margin-bottom: 10px;
-  }
-  
-  .activity-section p {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  .activity-section p strong {
-    font-weight: bold;
-  }
-  
-  /* Actions section styles */
+
+  .profile-section,
+  .account-section,
+  .activity-section,
   .actions-section {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    margin: 10px;
   }
-  
-  .actions-section h2 {
-    margin-bottom: 10px;
-  }
-  
-  .actions-section button {
-    background-color: #333;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 18px;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .actions-section button:hover {
-    background-color: #fff;
-    border: 2px solid #333;
-    color: #333;
-  }
-  
-  /* Responsive styles */
-  @media screen and (max-width: 768px) {
-    .navbar-menu {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .navbar-menu li {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-  
-    .actions-section button {
-      margin-bottom: 10px;
-    }
-  }
+}

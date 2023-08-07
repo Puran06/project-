@@ -2,26 +2,38 @@
 <html>
 <head>
   <title>User Management</title>
-  <link rel="stylesheet" href="admin_user_management.css">
+  <link rel="stylesheet" href="admin.css">
 </head>
 <body>
   <nav>
     <div class="container">
-        <a class="logo" href="#">Logo</a>
-        <ul class="navbar-menu">
-            <li><a href="../index.html">Home</a></li>
-        </ul>
+      <a class="logo" href="#">Logo</a>
+      <ul class="navbar-menu">
+        <li><a href="../index.html">Home</a></li>
+      </ul>
     </div>
-</nav>
-
+  </nav>
 
   <h1>User Management</h1>
 
- 
+    
+<!-- Statistics -->
+<div id="statistics">
+  <p>Total Users: <span id="totalUsers">0</span></p>
+  <p>Total Admins: <span id="totalAdmins">0</span></p>
+  <p>Total Vehicles Parked: <span id="totalVehicles">0</span></p>
+  <p>Total Locations Used: <span id="totalLocations">0</span></p>
+  <p>Total Bookings: <span id="totalBookings">0</span></p>
+</div>
+
+
+
+
+
 
   <!-- User form to add/edit users -->
-  <form id="userForm">
-    <input type="hidden" id="userId">
+  <form id="userForm" action="user_management.php" method="post">
+    <input type="hidden" id="userId" name="userId">
     <input type="text" id="fullName" placeholder="Full Name" required>
     <input type="email" id="email" placeholder="Email" required>
     <input type="password" id="password" placeholder="Password" required>
@@ -68,6 +80,9 @@
     </thead>
     <tbody></tbody>
   </table>
+
+
+  <script src="statistics.js"></script>
 
   <script src="user_management.js"></script>
 </body>

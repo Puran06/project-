@@ -10,27 +10,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Connect to the database
     $servername = "localhost";
     $username = "root";
-    $password = "";
+    $db_password = "";
     $dbname = "vpmsdd";
 
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new mysqli($servername, $username, $db_password, $dbname);
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    // Insert new user into the database
-    $sql = "INSERT INTO users (full_name, email, password, contact_number, role)
-            VALUES ('$name', '$email', '$password', '$contactNumber', '$role')";
+    // Use prepared statement to prevent SQL injection
+    $stmt = $conn->prepare("INSERT INTO users (full_name, email, password, contact_number, role)
+                           VALUES (?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssss", $name, $email, $password, $contactNumber, $role);
 
-    if ($conn->query($sql) === TRUE) {
+    if ($stmt->execute()) {
         // Registration successful
         echo "Registration successful!";
         // Perform further actions as needed
     } else {
         // Registration failed
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $stmt->error;
     }
 
+    $stmt->close();
     $conn->close();
 }
 ?>

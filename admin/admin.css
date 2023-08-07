@@ -1,0 +1,154 @@
+/* admin_management.css */
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Navigation Styling */
+nav {
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Heading Styling */
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Statistics Styling */
+#statistics {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+#statistics p {
+  text-align: center;
+  margin: 0;
+}
+
+#statistics p span {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #888;
+  color: #fff;
+  border-radius: 50%;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* User Form Styling */
+#userForm {
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+}
+
+#userForm label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  
+}
+
+
+#userForm input,
+#userForm select {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#userForm input[type="datetime-local"] {
+  width: 100%;
+}
+
+#userForm button {
+  display: inline-block;
+  width: 45%;
+  padding: 10px;
+  background-color: lightblue;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#userForm button:hover {
+  background-color: lightgreen;
+}
+
+#userForm button.save {
+  margin-right: 5%;
+}
+
+#userForm button.cancel {
+  margin-left: 5%;
+}
+
+/* Users Table Styling */
+#usersTable {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+#usersTable th,
+#usersTable td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#usersTable th {
+  background-color: lightgreen;
+  color: #fff;
+  text-align: left;
+}

@@ -98,12 +98,16 @@ mysqli_close($connection);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vehicle Parking Booking</title>
-    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="userbooking.css">
 </head>
 <body>
+    
     <h1>Vehicle Parking Booking</h1>
-<p>Total number of vehicle parking options: <?php echo $total_vehicle_options; ?></p>
-<p>Total number of locations: <?php echo $total_locations; ?></p>
+
+    <div id ="statistics">
+           <p>Total number of vehicle parking options: <?php echo $total_vehicle_options; ?></p>
+           <p>Total number of locations: <?php echo $total_locations; ?></p>
+    </div>
 
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
         <label for="location">Select Location:</label>

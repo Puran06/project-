@@ -1,0 +1,83 @@
+/* m.css */
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(86, 98, 121);
+  margin: 0;
+  padding: 0;
+}
+
+/* Heading Styling */
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+/* Statistics Styling */
+#statistics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #ffdddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#statistics p {
+  margin: 0;
+  padding: 10px;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Form Styling */
+form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: lightblue;
+  border-radius: 5px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form select,
+form input[type="datetime-local"],
+form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+form button[type="submit"] {
+  background-color: #88dd88;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Oval Shape Styling */
+form:before,
+form:after {
+  content: "";
+  display: block;
+  height: 20px;
+  background-color: #ffdddd;
+  border-radius: 10px;
+}
+
+form:before {
+  margin-bottom: 10px;
+}
+
+form:after {
+  margin-top: 10px;
+}
