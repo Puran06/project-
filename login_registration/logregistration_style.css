@@ -1,0 +1,95 @@
+/* CSS for the Login and Registration Form */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #eaf7ef; /* Light green background color */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-container input[type="text"],
+.input-container input[type="email"],
+.input-container input[type="password"],
+.input-container select {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #8e44ad;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.toggle-form-link {
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
+}
+
+.navbar {
+    background-color: #8e44ad;
+    padding: 10px;
+}
+
+.navbar-home a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Background Image */
+body {
+    background-image: url("j.jpg"); /* Update the image file path */
+    background-position: center;
+    background-size: cover;
+}
+
+/* Light Purple-Red Theme */
+h1,
+h2,
+.toggle-form-link {
+    color: #8e44ad;
+}
+
+.button-container input[type="submit"] {
+    background-color: #8e44ad;
+}

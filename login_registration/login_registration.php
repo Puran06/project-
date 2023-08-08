@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Login and Registration Form</title>
-    <link rel="stylesheet" href="logreg_style.css">
+    <link rel="stylesheet" href="logregistration_style.css">
     <script>
         // JavaScript function to toggle between login and registration forms
         function toggleForm() {
