@@ -1,3 +1,11 @@
+<?php
+$message = $_GET["message"] ?? "";
+
+if (!empty($message)) {
+    echo $message;
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,7 +76,7 @@
             <div class="input-container">
                 <label for="role">Role:</label>
                 <select name="role">
-                    <option value="admin">Admin</option>
+                    
                     <option value="user">User</option>
                 </select>
             </div>

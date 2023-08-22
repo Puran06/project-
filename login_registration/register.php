@@ -25,14 +25,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($stmt->execute()) {
         // Registration successful
-        echo "Registration successful!";
-        // Perform further actions as needed
+        $registrationMessage = "Registration successful!";
     } else {
         // Registration failed
-        echo "Error: " . $stmt->error;
+        $registrationMessage = "Error: " . $stmt->error;
     }
 
     $stmt->close();
     $conn->close();
+
+    // Generate a JavaScript alert with the registration message
+    echo "<script>alert('" . addslashes($registrationMessage) . "'); window.location.href = 'login_registration.php';</script>";
+    exit();
 }
 ?>

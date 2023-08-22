@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } elseif ($role === 'user') {
             // User is a regular user, redirect to user_dashboard.php
             $_SESSION['email'] = $email; // Set session variable
-            header("Location:user_dashboard.php ");
+            header("Location: user_dashboard.php");
             exit();
         } else {
             // Invalid role, handle the error
@@ -53,8 +53,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit();
         }
     } else {
-        // User doesn't exist or provided incorrect credentials, handle the error
-        echo "Invalid email or password";
+        // User doesn't exist or provided incorrect credentials
+        // Show a message in a prompt and redirect to login_registration.php
+        echo "<script>alert('Invalid email or password. Please try again.'); window.location.href = 'login_registration.php';</script>";
         exit();
     }
 

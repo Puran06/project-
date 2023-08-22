@@ -11,3 +11,8 @@ CREATE TABLE Users (
     total_money DECIMAL(10, 2) NOT NULL,
     role ENUM('admin', 'user') NOT NULL
 );
+
+INSERT INTO Users (full_name, email, password, contact_number, location, vehicle_type, entry_time, exit_time, total_money, role)
+VALUES
+    ('Admin Puran', 'puran7@gmail.com', 'password', '1234567890', 'Location 1', 'Car', NOW(), NOW(), 0.00, 'admin'),
+    ('Admin Rupendra', 'rupendra@gmail.com', 'password', '9876543210', 'Location 2', 'Car', NOW(), NOW(), 0.00, 'admin');

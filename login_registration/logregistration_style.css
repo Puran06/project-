@@ -3,27 +3,34 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-image: url("j.jpg"); /* Default background image */
+    background-position: center;
+    background-size: cover;
+    transition: background-image 0.3s; /* Smooth transition on background image change */
+}
+
+h1, h2, .toggle-form-link {
+    color: #8e44ad;
 }
 
 h1 {
     text-align: center;
     margin-top: 30px;
-    color: #333;
 }
 
 .form-container {
     max-width: 400px;
     margin: 30px auto;
     padding: 20px;
-    background-color: #eaf7ef; /* Light green background color */
+    background-color: rgba(234, 247, 239, 0.8); /* Transparent light green background */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s; /* Smooth transition on background color change */
 }
 
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
 }
 
 .input-container {
@@ -33,7 +40,6 @@ h2 {
 .input-container label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
 }
 
 .input-container input[type="text"],
@@ -44,6 +50,7 @@ h2 {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
 }
 
 .button-container {
@@ -59,10 +66,13 @@ h2 {
     cursor: pointer;
 }
 
+.button-container input[type="submit"]:hover {
+    background-color: #7d3c98; /* Darker shade on hover */
+}
+
 .toggle-form-link {
     text-align: center;
     margin-top: 15px;
-    color: #333;
 }
 
 .navbar {
@@ -76,20 +86,7 @@ h2 {
     font-weight: bold;
 }
 
-/* Background Image */
-body {
-    background-image: url("j.jpg"); /* Update the image file path */
-    background-position: center;
-    background-size: cover;
-}
-
-/* Light Purple-Red Theme */
-h1,
-h2,
-.toggle-form-link {
-    color: #8e44ad;
-}
-
-.button-container input[type="submit"] {
-    background-color: #8e44ad;
+/* Hover effect for changing background image */
+.form-container:hover {
+    background-color: rgba(234, 247, 239, 1); /* Solid light green background on hover */
 }

@@ -101,8 +101,18 @@ mysqli_close($connection);
     <link rel="stylesheet" href="userbooking.css">
 </head>
 <body>
+
+<h1>Vehicle Parking Booking</h1>
+
+    <div>
+        <nav>
+            <ul>
+                <li><a href="user_dashboard.php">my-page</a> </li>
+            </ul>
+        </nav>
+    </div>
     
-    <h1>Vehicle Parking Booking</h1>
+    
 
     <div id ="statistics">
            <p>Total number of vehicle parking options: <?php echo $total_vehicle_options; ?></p>

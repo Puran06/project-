@@ -205,3 +205,57 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('#userForm').addEventListener('submit', handleUserFormSubmit);
   document.querySelector('#usersTable').addEventListener('click', handleTableButtonClick);
 });
+
+
+// validation part//
+
+// Add this script at the end of your HTML body or in an external .js file.
+
+document.addEventListener('DOMContentLoaded', function () {
+  const userForm = document.getElementById('userForm');
+  const emailInput = document.getElementById('email');
+  const passwordInput = document.getElementById('password');
+  const entryTimeInput = document.getElementById('entryTime');
+  const exitTimeInput = document.getElementById('exitTime');
+  const totalMoneyInput = document.getElementById('totalMoney');
+
+  userForm.addEventListener('submit', function (event) {
+    if (!isValidEmail(emailInput.value)) {
+      alert('Invalid email format');
+      event.preventDefault();
+    }
+
+    if (!isValidPassword(passwordInput.value)) {
+      alert('Password must be at least 8 characters and contain a mix of letters and numbers');
+      event.preventDefault();
+    }
+
+    if (!isValidEntryExitTimes(entryTimeInput.value, exitTimeInput.value)) {
+      alert('Entry time must be before exit time');
+      event.preventDefault();
+    }
+
+    if (!isValidTotalMoney(totalMoneyInput.value)) {
+      alert('Total money must be a positive number');
+      event.preventDefault();
+    }
+  });
+
+  function isValidEmail(email) {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+  }
+
+  function isValidPassword(password) {
+    const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+    return passwordPattern.test(password);
+  }
+
+  function isValidEntryExitTimes(entryTime, exitTime) {
+    return new Date(entryTime) < new Date(exitTime);
+  }
+
+  function isValidTotalMoney(totalMoney) {
+    return parseFloat(totalMoney) >= 0;
+  }
+});
